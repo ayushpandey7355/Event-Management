@@ -58,7 +58,7 @@ const AnimatedCounter = ({ end, duration = 2000 }) => {
 export default function Venue() {
   const [selectedState, setSelectedState] = useState(null);
   const [selectedCity, setSelectedCity] = useState(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [setMousePosition] = useState({ x: 0, y: 0 });
 
   // Intersection Observer for animations
   useEffect(() => {

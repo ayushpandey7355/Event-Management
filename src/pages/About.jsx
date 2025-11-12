@@ -55,7 +55,7 @@ const FloatingParticles = ({ count = 15 }) => {
 };
 
 export default function About() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [setMousePosition] = useState({ x: 0, y: 0 });
 
   // Intersection Observer for animations
   useEffect(() => {
