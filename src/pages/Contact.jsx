@@ -96,7 +96,8 @@ const ContactForm = () => {
         break;
       case 'phone':
         if (!value) newErrors[name] = 'Phone number is required';
-        else if (!/^[\+]?[1-9][\d]{0,15}$/.test(value.replace(/[\s\-\(\)]/g, ''))) newErrors[name] = 'Invalid phone number';
+       else if (!/^\+?[1-9]\d{0,15}$/.test(value.replace(/[\s\-()]/g, '')))
+        newErrors[name] = 'Invalid phone number';
         else delete newErrors[name];
         break;
       case 'hotelName':
